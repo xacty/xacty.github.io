@@ -1,1 +1,1 @@
-$('#myid2').affix({offset: {top: 30, bottom: 500} });
+$('#sideportfolio').affix({offset: {top: 30, bottom: 500} });
