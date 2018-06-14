@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function(){
       });
 });
 
-$("#tirilililili").affix({
+$("#side").affix({
   offset: {
     top: 30,
     bottom: 475

@@ -1,4 +1,9 @@
 /* Gallery Configuration */
+#myid2 {
+	top: 30;
+	bottom: 30;
+}
+
 .photo-wrapper {
 	display: block;
 	position: relative;

@@ -1,0 +1,1 @@
+$('#myid2').affix({offset: {top: 150, bottom: 200} });
