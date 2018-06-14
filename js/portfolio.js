@@ -1,1 +1,1 @@
-$('#myid2').affix({offset: {top: 30, bottom: 200} });
+$('#myid2').affix({offset: {top: 30, bottom: 500} });
