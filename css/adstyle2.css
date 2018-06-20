@@ -1,5 +1,7 @@
-/*parallax effect*/
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 /*videodiv*/ 
 .carousel, 
