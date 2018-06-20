@@ -46,15 +46,6 @@
 	z-index: -1;
 }
 
-.positiondsc {
-	position: relative;
-	top: 35%;
-}
-
-#video {
-	width: 700px;
-	height: 393.443px;
-}
 
 #portfolio-btn3 {
 	margin-top: 100px;
@@ -157,7 +148,7 @@
 	opacity: 1;
 }
 
-.video1 {
+#video1 {
 	position: relative;
 	left: 10%;
 	width: 900px;
