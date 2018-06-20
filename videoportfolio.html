@@ -33,7 +33,7 @@
     </head>
     <body>
 
-    <header id="anchor0" class="header">
+    <header class="header">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                     <div class="navbar-header">
@@ -51,7 +51,15 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">Let's talk</a></li>
-                            <li><a href="portfolio.html">Projects</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Projects <i class="fas fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="portfolio.html">Websites</a>
+                                    <a class="dropdown-item" href="videoportfolio.html">Videos</a>
+                                </div>
+                            </li>
                             <li><a href="directory.html" class="btn">Services</a></li>
                         </ul>
                     </div>
