@@ -16,13 +16,13 @@ $(document).ready(function(){
 	$(window).scroll(function(event){
 		var y = $(this).scrollTop();
 		
-		if (y >= 700) {
+		if (y >= 400) {
 			$('#video2,.esto2').addClass('animateMe')
 		}
-		if (y >= 1400) {
+		if (y >= 1000) {
 			$('#video3,.esto3').addClass('animateMe3')
 		}
-		if (y >= 2300) {
+		if (y >= 2000) {
 			$('#video4,.esto4').addClass('animateMe')
 		}
 
