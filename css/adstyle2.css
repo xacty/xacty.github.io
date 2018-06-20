@@ -1,9 +1,258 @@
-/* Gallery Configuration */
-#myid2 {
-	top: 30;
-	bottom: 30;
+/*parallax effect*/
+
+
+/*videodiv*/ 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    height: 100%;
 }
 
+.item:nth-child(1) {
+    min-height: 104px;
+	color: #fff;
+	background: #46b39e;
+	background: -moz-linear-gradient(45deg, #46b39e 0%, #8f44ad 100%);
+	background: -webkit-linear-gradient(45deg, #46b39e 0%,#8f44ad 100%);
+	background: linear-gradient(45deg, #46b39e 0%,#8f44ad 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b39e', endColorstr='#8f44ad',GradientType=1 );
+	z-index: -1;
+}
+
+.positiondsc {
+	position: relative;
+	top: 35%;
+}
+
+#video {
+	width: 700px;
+	height: 393.443px;
+}
+
+#portfolio-btn3 {
+	margin-top: 100px;
+    border-width: 2px;
+    border-color: white;
+    color: white;
+    background: transparent;
+    min-width: 0px;
+    text-align: center;
+}
+
+#portfolio-btn4 {
+	margin-top: 100px;
+    border-width: 2px;
+    border-color: #26306b;
+    color: #26306b;
+    background: transparent;
+    min-width: 0px;
+    text-align: center;
+}
+
+#portfolio-btn3:hover {
+	background-color: white;
+	color: black;
+}
+
+.bg-color0 {
+	padding-top: 250px;
+	padding-bottom: 50px;
+	background: #46b39e;
+	background: -moz-linear-gradient(45deg, #46b39e 0%, #8f44ad 100%);
+	background: -webkit-linear-gradient(45deg, #46b39e 0%,#8f44ad 100%);
+	background: linear-gradient(45deg, #46b39e 0%,#8f44ad 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b39e', endColorstr='#8f44ad',GradientType=1 );
+}
+
+.bg-color1 {
+	padding-top: 200px;
+	padding-bottom: 50px;
+	background-color: #ecf0f1;
+}
+
+.bg-color2 {
+	padding-top: 200px;
+	padding-bottom: 50px;
+	background-color: white;
+}
+
+.tittletext {
+	margin-top: 25%;
+}
+
+.tittleHeader {
+	color: white;
+}
+
+.textheader {
+	color: white;
+}
+.esto {
+	position: absolute;
+    left: 10%;
+    top: -9%;
+    width: 700px;
+    height: 420px;
+    background-color: #C9D0E3;
+    transform: skewY(-5deg);
+    animation: esto 10s ease-in-out;
+}
+
+.esto2,.esto4 {
+	position: absolute;
+    left: 80%;
+    top: 77%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #46b39e;
+    opacity: 0;
+}
+
+.esto2.animateMe {
+	animation: estotwo 10s ease-in-out forwards ;
+	opacity: 1;
+}
+
+.esto3 {
+	position: absolute;
+    left: 10%;
+    top: -9%;
+    width: 700px;
+    height: 420px;
+    background-color: #C9D0E3;
+    transform: skewY(-5deg);
+    opacity: 0;
+}
+
+.esto3.animateMe3 {
+	animation: esto 10s ease-in-out forwards;
+	opacity: 1;
+}
+
+.video1 {
+	position: relative;
+	left: 10%;
+	width: 900px;
+	height: 506.25px;
+	animation: videone 2s ease;
+	z-index: 2;
+	box-shadow: 0px 10px 15px rgb(0, 0, 0, .5);
+}
+
+#video2, #video4 {
+	position: relative;
+	left: -25%;
+	width: 900px;
+	height: 506.25px;
+	z-index: 2;
+	box-shadow: 0px 10px 15px rgb(0, 0, 0, .5);
+	opacity: 0;
+}
+
+#video2.animateMe {
+  	animation: videotwo 2s ease forwards ;
+ 	opacity: 1;
+}
+
+#video3 {
+	position: relative;
+	left: 10%;
+	width: 900px;
+	height: 506.25px;	
+	z-index: 2;
+	box-shadow: 0px 10px 15px rgb(0, 0, 0, .5);
+	opacity: 0;
+}
+
+#video3.animateMe3 {
+	animation: videothree 2s ease forwards;
+	opacity: 1;
+}
+
+#video4.animateMe {
+	animation: videotwo 2s ease forwards ;
+ 	opacity: 1;
+}
+
+.esto4.animateMe {
+	animation: estotwo 10s ease-in-out forwards ;
+	opacity: 1
+}
+
+@keyframes videone {
+	0% {
+		left: 40%;
+		transform: rotate3d(-1,1,0, 90deg);
+		opacity: 0;
+	}
+	100%{ 
+		left: 10%;
+		transform: rotate3d(0,0,2, 0deg);
+		opacity: 1;
+	}
+
+}
+
+@keyframes videotwo {
+	0% {
+		left: -40%;
+		transform: rotate3d(-1,1,0, 90deg);
+		opacity: 0;
+	}
+	100%{ 
+		left: -25%;
+		transform: rotate3d(0,0,2, 0deg);
+		opacity: 1;
+	}
+
+}
+
+@keyframes videothree {
+	0% {
+		left: 40%;
+		transform: rotate3d(-1,1,0, 90deg);
+		opacity: 0;
+	}
+	100%{ 
+		left: 10%;
+		transform: rotate3d(0,0,2, 0deg);
+		opacity: 1;
+	}
+
+}
+
+@keyframes esto {
+	0% {
+		top: 20%;
+		opacity: 0;
+	}
+	33%{
+		opacity: 1;
+	}
+
+	100% {
+		top: -9%;
+	}
+}
+
+@keyframes estotwo {
+	0% {
+		top: 0%;
+		opacity: 0;
+	}
+	33%{
+		opacity: 1;
+	}
+
+	100% {
+		top: 77%;
+	}
+}
+
+
+
+/* Gallery Configuration */
 .photo-wrapper {
 	display: block;
 	position: relative;
