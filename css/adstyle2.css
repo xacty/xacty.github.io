@@ -35,12 +35,28 @@
 	border-color: white;
 	color: white;
 	background: transparent;
+	min-width: 230px;
 }
 
 #portfolio-btn2:hover, #portfolio-btn3:hover {
 	background-color: white;
 	color: #26306b;
 }
+
+#portfolio-btn2 {
+	margin-top: 25px;
+	border-width: 2px;
+	border-color: white;
+	color: white;
+	background: transparent;
+	min-width: 230px;
+}
+
+#portfolio-btn2:hover, #portfolio-btn3:hover {
+	background-color: white;
+	color: #26306b;
+}
+
 .btn-small-size {
 	margin-top: 5%;
     border-width: 2px;
@@ -65,6 +81,35 @@
 }
 
 /*videodiv*/ 
+
+.leftside {
+	grid-area: leftside;
+}
+
+.rightside {
+	grid-area: rightside;
+}
+
+.leftside2 {
+	grid-area: leftside2;
+}
+
+.rightside2 {
+	grid-area: rightside2;
+}
+
+.clearfix:after {
+	content: ;
+	display: table;
+	height: 0;
+	clear: both;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 30% auto;
+	grid-template-areas: "leftside rightside" "leftside2 rightside2";
+}
 
 .bg-color0 {
 	padding-top: 250px;
@@ -110,8 +155,19 @@
 
 .esto3 {
 	position: absolute;
-    left: 10%;
-    top: -9%;
+    left: 41%;
+    top: 200px;
+    width: 700px;
+    height: 420px;
+    background-color: #C9D0E3;
+    transform: skewY(-5deg);
+    opacity: 0;
+}
+
+.esto5 {
+	position: absolute;
+    left: 41%;
+    top: 1728px;
     width: 700px;
     height: 420px;
     background-color: #C9D0E3;
@@ -157,6 +213,11 @@
 	opacity: 1;
 }
 
+.esto5.animateMe {
+	animation: estothree 12s ease-in-out;
+	opacity: 1;
+}
+
  
 @keyframes videone {
 	0% {
@@ -188,7 +249,7 @@
 
 @keyframes esto {
 	0% {
-		top: 20%;
+		top: 350px;
 		opacity: 0;
 	}
 	33%{
@@ -196,7 +257,21 @@
 	}
 
 	100% {
-		top: -9%;
+		top: 200px;
+	}
+}
+
+@keyframes estothree {
+	0% {
+		top: 1878px;
+		opacity: 0;
+	}
+	33%{
+		opacity: 1;
+	}
+
+	100% {
+		top: 1728px;
 	}
 }
 
@@ -372,18 +447,6 @@
 .desc3:hover .overlay, .desc4:hover .overlay {
   bottom: 0;
   height: 100%;
-}
-
-@media (max-width: 767px){
-	.desc3 {
-		position: relative;
-		width: 100%;
-	}
-
-	.desc4 {
-		position: relative;
-		width: 100%;
-	}
 }
 
 /*Portfolio page*/
@@ -737,8 +800,8 @@
 
 @media (max-width: 1600px){
 
-	.tittletext, .tittletext~p {
-		margin-top: 0;
+	.tittletext {
+		margin-top: 20px;
 	} 
 
 	.video1, #video3, #video2, #video4 {
@@ -759,10 +822,17 @@
 	}
 
 	.esto3 {
-		left: 10%;
-		top: -9%;
-		width: 600px;
-		height: 360px;
+	    left: 41%;
+	    top: 20%;
+	    width: 600px;
+	    height: 360px;
+	}
+
+	.esto5 {
+	    left: 41%;
+	    top: 1565px;
+	    width: 600px;
+	    height: 360px;
 	}
 
 	@keyframes videone {
@@ -793,9 +863,23 @@
 
 	}
 
+	@keyframes estothree {
+		0% {
+			top: 1665px;
+			opacity: 0;
+		}
+		33%{
+			opacity: 1;
+		}
+
+		100% {
+			top: 1565px;
+		}
+	}
+
 }
 
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 1280px){
 
 	.tittletext {
 		font-size: 3vw;
@@ -806,8 +890,8 @@
 	}
 	
 	.video1, #video3, #video2, #video4 {
-		width: 600px;
-		height: 337.5px;
+		width: 650px;
+		height: 365.625px;
 	}
 
 	.videoPosition1 {
@@ -823,10 +907,17 @@
 	}
 
 	.esto3 {
-		left: 10%;
-		top: -9%;
-		width: 400px;
-		height: 240px;
+	    left: 41%;
+	    top: 200px;
+	    width: 500px;
+	    height: 300px;
+	}
+
+	.esto5 {
+	    left: 41%;
+	    top: 1490px;
+	    width: 500px;
+	    height: 300px;
 	}
 
 	@keyframes videone {
@@ -854,44 +945,171 @@
 			transform: rotate3d(0,0,2, 0deg);
 			opacity: 1;
 		}
+	}
 
+	@keyframes estothree {
+		0% {
+			top: 1629px;
+			opacity: 0;
+		}
+		33%{
+			opacity: 1;
+		}
+
+		100% {
+			top: 1490px;
+		}
 	}
 
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 1024px){
 	
+
 	.tittletext {
-		font-size: 3vw;
+		font-size: 4vw;
 	}
 
 	.tittletext~p {
-		font-size: 1.2vw;
+		font-size: 2vw;
+	}
+
+	.wrapper {
+		grid-gap: ;
+		grid-template-columns: 100%;
+		grid-template-areas: "rightside" "leftside" "rightside2" "leftside2";
+	}
+
+	.col-md-8, .col-md-4 {
+		width: 100%;
+		margin: 20px,0,20px,0;
+	}
+
+	.video1, #video3, #video2, #video4 {
+		width: 700px;
+		height: 393.75px;
+	}
+
+	.videoPosition1, .videoPosition2 {
+		left: 0%
+	}
+
+	.esto3 {
+		left: 13%;
+		top: 205px;
+		width: 600px;
+    	height: 360px;
+	}
+	.esto5 {
+		position: absolute;
+	    left: 13%;
+	    top: 2010px;
+	    width: 600px;
+    	height: 360px;
+	}
+
+	.videoPosition1 {
+		left: 0%
+	}
+
+	@keyframes videone {
+		0% {
+			left: 25%;
+			transform: rotate3d(-1,1,0, 90deg);
+			opacity: 0;
+		}
+		100%{ 
+			left: 0%;
+			transform: rotate3d(0,0,2, 0deg);
+			opacity: 1;
+		}
+
+	}
+
+	@keyframes videotwo {
+		0% {
+			left: -25%;
+			transform: rotate3d(-1,1,0, 90deg);
+			opacity: 0;
+		}
+		100%{ 
+			left: 0%;
+			transform: rotate3d(0,0,2, 0deg);
+			opacity: 1;
+		}
+	}
+
+	@keyframes esto {
+		0% {
+			top: 305px;
+			left: 17%
+			opacity: 0;
+		}
+		33%{
+			opacity: 1;
+		}
+
+		100% {
+			top: 205px;
+		}
+	}
+
+	@keyframes estothree {
+		0% {
+			top: 2100px;
+			opacity: 0;
+		}
+		33%{
+			opacity: 1;
+		}
+
+		100% {
+			top: 2010px;
+		}
 	}
 	
+
+}
+
+@media screen and  (max-width: 750px){
+
+	.desc3 {
+		position: relative;
+		width: 100%;
+	}
+
+	.desc4 {
+		position: relative;
+		width: 100%;
+	}
+
 	.indexp1 {
 	min-height: 850px;
 	}
 
+	.overlay2 img {
+	width: 120px;
+	}
+
 	.p4 {
-    	position: absolute;
-    	max-width: 326px;
-    	top: 350px;
-    	right: 8%;
-    	transition: 1s;
+		position: absolute;
+		max-width: 400px;
+		top: 350px;
+		right: 8%;
+		transition: 1s;
 	}
 
 	.col-xs-4 .p5 {
-		margin-top: -159px;
-    	margin-left: -38%;
-    	width: 264px;
+		margin-top: -261px;
+    	margin-left: -30%;
+    	width: 334px;
     	transition: 1s;
 	}
 
 	.col-xs-8 .p6 {
-    	margin-top: -5px;
-    	width: 376px;
-    	margin-left: -10%;
+		margin-top: -59px;
+    	width: 492px;
+    	margin-left: -7%;
     	transition: 1s;
 	}
 
@@ -1171,35 +1389,6 @@
 	}
 
 	
-}
-
-@media screen and (min-width: 750px){
-
-	.overlay2 img {
-	width: 120px;
-	}
-
-	.p4 {
-		position: absolute;
-		max-width: 400px;
-		top: 350px;
-		right: 8%;
-		transition: 1s;
-	}
-
-	.col-xs-4 .p5 {
-		margin-top: -261px;
-    	margin-left: -30%;
-    	width: 334px;
-    	transition: 1s;
-	}
-
-	.col-xs-8 .p6 {
-		margin-top: -59px;
-    	width: 492px;
-    	margin-left: -7%;
-    	transition: 1s;
-	}
 }
 
 @media screen and (min-width: 992px){
