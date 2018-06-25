@@ -964,7 +964,10 @@
 }
 
 @media screen and (max-width: 1024px){
-	
+
+	.descPort {
+		width: 100%;
+	}	
 
 	.tittletext {
 		font-size: 4vw;
@@ -978,11 +981,6 @@
 		grid-gap: ;
 		grid-template-columns: 100%;
 		grid-template-areas: "rightside" "leftside" "rightside2" "leftside2";
-	}
-
-	.col-md-8, .col-md-4 {
-		width: 100%;
-		margin: 20px,0,20px,0;
 	}
 
 	.video1, #video3, #video2, #video4 {
@@ -1071,7 +1069,28 @@
 
 }
 
-@media screen and  (max-width: 750px){
+@media screen and  (max-width: 768px){
+
+	.tittletext {
+		font-size: 41px;
+	}
+
+	.tittletext~p {
+		font-size: unset;
+	}
+
+	.video1, #video3, #video2, #video4 {
+		width: 650px;
+		height: 365.625px;
+	}
+
+	.esto2, .esto4 {
+		left:74%;
+	}
+
+	.esto3, .esto5 {
+		left: 2%;
+	}
 
 	.desc3 {
 		position: relative;
@@ -1081,36 +1100,6 @@
 	.desc4 {
 		position: relative;
 		width: 100%;
-	}
-
-	.indexp1 {
-	min-height: 850px;
-	}
-
-	.overlay2 img {
-	width: 120px;
-	}
-
-	.p4 {
-		position: absolute;
-		max-width: 400px;
-		top: 350px;
-		right: 8%;
-		transition: 1s;
-	}
-
-	.col-xs-4 .p5 {
-		margin-top: -261px;
-    	margin-left: -30%;
-    	width: 334px;
-    	transition: 1s;
-	}
-
-	.col-xs-8 .p6 {
-		margin-top: -59px;
-    	width: 492px;
-    	margin-left: -7%;
-    	transition: 1s;
 	}
 
 	#overlay4 {
@@ -1170,6 +1159,32 @@
 	.innerLogo {
 		padding-top: 25px;
 	}
+
+	.indexp1 {
+	min-height: 850px;
+	}
+
+	.p4 {
+    	position: absolute;
+    	max-width: 326px;
+    	top: 350px;
+    	right: 8%;
+    	transition: 1s;
+	}
+
+	.col-xs-4 .p5 {
+		margin-top: -159px;
+    	margin-left: -38%;
+    	width: 264px;
+    	transition: 1s;
+	}
+
+	.col-xs-8 .p6 {
+    	margin-top: -5px;
+    	width: 376px;
+    	margin-left: -10%;
+    	transition: 1s;
+	}
 }
 
 @media screen and (max-width: 595px){
@@ -1179,6 +1194,7 @@
 	}
 
 	.p2 {
+	position: absolute;
     top: 50px;
     left: 33%;
     right: 25%;
@@ -1187,6 +1203,7 @@
 	}
 
 	.p3 {
+	position: absolute;
 	max-width: 383px;
     top: 206px;
     left: 8%;
@@ -1194,6 +1211,7 @@
 	}
 
 	.p4 {
+	position: absolute;
     max-width: 331px;
     top: 301px;
     right: 8%;
@@ -1253,52 +1271,127 @@
 
 @media screen and (max-width: 414px){
 
+	.bg-color0 {
+		padding-top: 100px;
+	}
+
+	.video1, #video3, #video2, #video4 {
+    	width: 350px;
+    	height: 196.87px;
+	}
+
+	.esto3 {
+	    top: 76px;
+	    width: 300px;
+	    height: 180px;
+	}
+
+	.esto2, .esto4 {
+	    left: 75%;
+	    top: 75%;
+	    width: 100px;
+	    height: 100px;
+	}
+
+	.esto5 {
+	    top: 1625px;
+	    width: 300px;
+	    height: 180px;
+	}
+
+	@keyframes esto {
+		0% {
+			top: 133px;
+			opacity: 0;
+		}
+		33%{
+			opacity: 1;
+		}
+
+		100% {
+			top: 76px;
+		}
+	}
+
+	@keyframes estothree {
+		0% {
+			top: 1695px;
+			opacity: 0;
+		}
+		33%{
+			opacity: 1;
+		}
+
+		100% {
+			top: 1625px;
+		}
+	}
+
 	.indexp1 {
-	min-height: 500px;
+		min-height: 500px;
 	}
 
 	.p2 {
-	position: absolute;
-    top: 50px;
-    left: 33%;
-    right: 25%;
-    max-width: 138px;
-    transition: 1s;
+		position: absolute;
+	    top: 50px;
+	    left: 33%;
+	    right: 25%;
+	    max-width: 138px;
+	    transition: 1s;
 	}
 
 	.p3 {
-	max-width: 269px;
-    position: absolute;
-    top: 165px;
-    left: 8%;	
-    transition: 1s;
+		max-width: 269px;
+	    position: absolute;
+	    top: 165px;
+	    left: 8%;	
+	    transition: 1s;
 	}
 
 	.p4 {
-    position: absolute;
-    max-width: 241px;
-    top: 232px;
-    right: 8%;
-    transition: 1s;
+	    position: absolute;
+	    max-width: 241px;
+	    top: 232px;
+	    right: 8%;
+	    transition: 1s;
 	}
 
 	.col-xs-4 .p5 {
-	margin-top: -92px;
-    margin-left: -66%;
-    width: 192px;
-    transition: 1s;
+		margin-top: -92px;
+	    margin-left: -66%;
+	    width: 192px;
+	    transition: 1s;
 	}
 
 	.col-xs-8 .p6 {
-    margin-top: 25px;
-    width: 271px;
-    margin-left: -17%;
-    transition: 1s;
+	    margin-top: 25px;
+	    width: 271px;
+	    margin-left: -17%;
+	    transition: 1s;
 	}
 
 }
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 375px){
+
+	.esto5 {
+		top: 1685px;
+	}
+	
+
+	@keyframes estothree {
+		0% {
+			top: 1779px;
+			opacity: 0;
+		}
+		33%{
+			opacity: 1;
+		}
+
+		100% {
+			top: 1685px;
+		}
+	}
 
 	.indexp1 {
 	min-height: 450px;
@@ -1345,6 +1438,29 @@
 }
 
 @media screen and (max-width: 320px){
+
+	.video1, #video3, #video2, #video4 {
+	    width: 300px;
+	    height: 168.75px;
+	}
+
+	.esto5 {
+		top: 1800px;
+	}
+
+	@keyframes estothree {
+		0% {
+			top: 1870px;
+			opacity: 0;
+		}
+		33%{
+			opacity: 1;
+		}
+
+		100% {
+			top: 1800px;
+		}
+	}
 
 	.indexp1 {
 	min-height: 400px;
