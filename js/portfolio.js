@@ -18,8 +18,6 @@ videoPlayer.play();
 var videos = [
 "video11",
 "video12",
-"video13",
-"video14",
 "video15"
 ], videos = videos[Math.floor(Math.random() * videos.length)];
 
@@ -38,11 +36,8 @@ function playIt2(){
 videoPlayer2.play();
 
 var videos2 = [
-"video11",
-"video12",
-"video13",
-"video14",
-"video15"
+"video21",
+"video22"
 ], videos2 = videos2[Math.floor(Math.random() * videos2.length)];
 
 videoPlayer2.src = "./img/" + videos2 + ".mp4";
@@ -60,11 +55,8 @@ function playIt3(){
 videoPlayer3.play();
 
 var videos3 = [
-"video11",
-"video12",
-"video13",
-"video14",
-"video15"
+"video31",
+"video32"
 ], videos3 = videos3[Math.floor(Math.random() * videos3.length)];
 
 videoPlayer3.src = "./img/" + videos3 + ".mp4";
