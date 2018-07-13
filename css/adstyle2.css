@@ -670,6 +670,7 @@
 	height: 100%;	
 	opacity: 0;
 	transition: .5s ease;
+	visibility: visible;
 }
 
 #overlayColor1 {
