@@ -670,23 +670,22 @@
 	height: 100%;	
 	opacity: 0;
 	transition: .5s ease;
-	visibility: visible;
 }
 
 #overlayColor1 {
-	background-color: rgba(70, 179, 158,.8);
+	background-color: rgb(70, 179, 158,.8);
 }
 
 #overlayColor2 {
-	background-color: rgb(233, 62, 86);
+	background-color: #e93e5688;
 }
 
 #overlayColor3 {
-	background-color: rgba(38, 48, 107,.8);
+	background-color: rgb(38, 48, 107,.8);
 }
 
 #overlayColor4 {
-	background-color: rgba(143, 68, 173,.8);
+	background-color: rgb(143, 68, 173,.8);
 }
 
 .overlay-text {
