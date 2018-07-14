@@ -673,7 +673,7 @@
 }
 
 #overlayColor1 {
-	background-color: rgb(70, 179, 158,.8);
+	background-color: #46b39e88;
 }
 
 #overlayColor2 {
@@ -681,11 +681,11 @@
 }
 
 #overlayColor3 {
-	background-color: rgb(38, 48, 107,.8);
+	background-color: #26306b88;
 }
 
 #overlayColor4 {
-	background-color: rgb(143, 68, 173,.8);
+	background-color: #8f44ad88;
 }
 
 .overlay-text {
