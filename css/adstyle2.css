@@ -763,6 +763,11 @@
 	height: auto;
 }
 
+.port02 {
+	text-align: center;
+	padding: 5% 0 0 5%;
+}
+
 .wrapped-photo {
 	position: relative;
 	overflow: hidden;	
