@@ -94,14 +94,15 @@ $(document).ready(function(){
 		if (y >= 400) {
 			$('#video2,.esto2').addClass('animateMe')
 		}
+    if (y >= 500) {
+      $('.wrapped-phototwo').addClass('animateMe')
+    }
 		if (y >= 1000) {
 			$('#video3,.esto5').addClass('animateMe')
 		}
 		if (y >= 2000) {
 			$('#video4,.esto4').addClass('animateMe')
 		}
-
-		
 	});
 });
 
