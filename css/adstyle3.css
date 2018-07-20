@@ -22,7 +22,7 @@
 	transition-duration: 1s;
 	width: 500px;
 	height: 399.701px;
-	box-shadow: 0px 10px 15px rgb(0, 0, 0, .5);
+	box-shadow: 0px 8px 15px rgb(0, 0, 0, .3);
 	animation: photone 2s ease;
 }
 
@@ -52,8 +52,9 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b39e', endColorstr='#8f44ad',GradientType=1 ); 
 }
 
-
-
+.quad > ul > i {
+	font-size: 8px;
+}
 .quad > ul, .quad > p {
 	color: white;
 	text-align: right;
