@@ -8,6 +8,5 @@ $(document).ready(function(){
 	    if (y >= 1200) {
 	      $('.photo3,.ipad').addClass('animateMe')
 	    }
-
 	});
 });
