@@ -743,7 +743,7 @@
 /*PortfolioV2*/
 
 .portdesc {
-	padding: 50px 0 50px 0;
+	padding: 5% 0 5% 0;
 }
 
 .port01 {
@@ -834,7 +834,7 @@
 }
 
 .char2 {
-    left: 60%;
+    left: 56%;
     top: 56%;
     width: 18rem;
     height: 17rem;
@@ -890,6 +890,20 @@
 .ipad.animateMe {
 	animation: photfour 1s linear;
 	opacity: 1;
+}
+
+.btncolleft {
+	grid-area: btnleftside;
+}
+
+.btncolright {
+	grid-area: btnrightside;
+}
+
+.btn-wrap {
+	display: grid;
+	grid-template-columns: 50% auto;
+	grid-template-areas: "btnleftside btnrightside";
 }
 
 @keyframes upandown {
@@ -1159,6 +1173,13 @@
 		height: 300px;
 	}
 
+	.btn-wrap {
+		text-align: center;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas: "btnleftside" "btnrightside";
+	}
+
 	@keyframes videone {
 		0% {
 			left: 20%;
@@ -1202,6 +1223,25 @@
 }
 
 @media screen and (max-width: 1024px){
+
+	.port01, .port02 {
+		padding: 0;
+	}
+
+	.column01 {
+		left: -3%;
+		margin-top: -7%;
+		transform: scale(.8);
+	}
+	
+	.column02 {
+		transform: scale(.8);
+		margin-top: -7%;
+	}
+
+	.texton2 {
+		right: -11%;
+	}
 
 	.descPort {
 		width: 100%;
@@ -1302,6 +1342,23 @@
 		100% {
 			top: 2010px;
 		}
+	}
+}
+
+@media screen and (max-width: 991px){
+
+	.column01 {
+		left: 6%;
+		margin-top: 7%;
+		transform: scale(1);
+	}
+
+	.portdesc {
+    	padding: 0% 0 7% 0%;
+	}
+
+	.texton2 {
+		right: 10%;
 	}
 }
 
@@ -1421,6 +1478,16 @@
 
 @media screen and (max-width: 595px){
 
+	.column01 {
+    left: 0;
+	margin-top: 0;
+	transform: scale(0.8);
+	}
+
+	.texton2 {
+    right: 1%;
+	}
+
 	.indexp1 {
 		min-height: 700px;
 	}
@@ -1490,6 +1557,22 @@
 }
 
 @media screen and (max-width: 414px){
+
+	.column01 {
+		left: -13%;
+		margin-top: -13%;
+		transform: scale(0.65);
+	}
+
+	.column02 {
+	    transform: scale(.65);
+	    margin-top: -22%;
+	    left: -8%;
+	}
+
+	.texton2 {
+	    right: -18%;
+	}
 
 	.bg-color0 {
 		padding-top: 100px;
@@ -1584,6 +1667,16 @@
 }
 
 @media screen and (max-width: 375px){
+
+	.column01 {
+	    left: -20%;
+	    margin-top: -18%;
+	    transform: scale(0.55);
+	}
+
+	.texton2 {
+	    right: -27%;
+	}
 
 	.esto5 {
 		top: 1685px;
