@@ -751,6 +751,22 @@
 	grid-template-areas: "btnleftside btnrightside";
 }
 
+.ulcolleft {
+	grid-area: ulleftside;
+}
+
+.ulcolright {
+	grid-area: ulrightside;
+}
+
+.ul-wrap {
+	text-align: left;
+	padding: 0 5% 0 5%;
+	display: grid;
+	grid-template-columns: 50%  auto;
+	grid-template-areas: "ulleftside ulrightside";
+}
+
 @keyframes upandown {
 	0% {
 		margin-top: 3%;
