@@ -696,18 +696,17 @@
 	font-size: 8px;
 	opacity: .8;
 }
-.quad > ul, .quad > p {
+.quad > ul, .quad > a {
 	color: white;
 	text-align: right;
-}
-.texton {
-	text-align: left !important;
 }
 
-.texton2 {
-	position: relative;
-	text-align: right;
-	color: white;
+.quad > a:hover {
+	color: #26306b;
+}
+
+.texton {
+	text-align: left;
 }
 
 .photoCel {
