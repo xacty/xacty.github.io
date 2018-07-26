@@ -601,6 +601,7 @@
 	overflow: hidden;	
 	border-radius: 5px;
 	box-shadow: 0px 8px 15px rgb(0, 0, 0, .3);
+	transition: 1s;
 }
 
 .photo1 {
@@ -632,6 +633,10 @@
 .photo3.animateMe {
 	animation: photfive 2s ease-out;
 	opacity: 1;
+}
+
+.photo1:hover, .photo2:hover, .photo3:hover {
+	transform: scale(1.2);
 }
 
 .img1 {
