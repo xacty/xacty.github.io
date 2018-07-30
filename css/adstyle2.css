@@ -977,7 +977,7 @@
 	background:-webkit-linear-gradient(80deg, #8f44ad 54%, #AD69C8 56%, #8f44ad 84%);
 	color: white;
 }
-.wrapservice:hover .wrapservice:nth-child(2) {
+.wrapservice:hover .colService div:nth-child(2) {
 	height: 380px;
 	background:linear-gradient(-80deg, #6b7ba5 45%, #99A5C5 10%, #6b7ba5 45%);
 	background:-webkit-linear-gradient(80deg, #6b7ba5 54%, #99A5C5 56%, #6b7ba5 84%);
@@ -1084,7 +1084,8 @@
     left: 95px;
 	width: 5.5rem;
 	height: 5.5rem;
-	background: #8f44ad;
+	border-radius: 50%;
+	background: #26306b;
 	-webkit-perspective: 500px;
 	-moz-perspective: 500px;
 	-o-perspective: 500px;
@@ -1107,7 +1108,7 @@
 }
 
 .wrapservice:hover .overanimation div:nth-child(4) {
-	background: #26306b;
+	background: #fff;
 	animation: .5s nextrect .25s linear, nextrectentrance .5s linear;
 	-webkit-transform-origin: 100% 100%;
 	-moz-transform-origin: 100% 100%;
