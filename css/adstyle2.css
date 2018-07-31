@@ -973,21 +973,26 @@
 
 .wrapservice:hover {
 	height: 380px;
+	color: white;
+}
+
+.bg-color-service-1:hover {
 	background:linear-gradient(-80deg, #8f44ad 45%, #8B4D9E 10%, #8f44ad 45%);
 	background:-webkit-linear-gradient(80deg, #8f44ad 54%, #AD69C8 56%, #8f44ad 84%);
-	color: white;
 }
-.wrapservice:hover .colService div:nth-child(2) {
-	height: 380px;
+.bg-color-service-2:hover {
 	background:linear-gradient(-80deg, #6b7ba5 45%, #99A5C5 10%, #6b7ba5 45%);
 	background:-webkit-linear-gradient(80deg, #6b7ba5 54%, #99A5C5 56%, #6b7ba5 84%);
-	color: white;
 }
-.wrapservice:nth-child(3):hover {
-	height: 380px;
-	background:linear-gradient(-80deg, #6b7ba5 45%, #99A5C5 10%, #6b7ba5 45%);
-	background:-webkit-linear-gradient(80deg, #6b7ba5 54%, #99A5C5 56%, #6b7ba5 84%);
-	color: white;
+.bg-color-service-3:hover {
+	background:linear-gradient(-80deg, #46b39e 45%, #6ECEBB 10%, #46b39e 45%);
+	background:-webkit-linear-gradient(80deg, #46b39e 54%, #6ECEBB 56%, #46b39e 84%);
+}
+
+.bg-color-service-4:hover {
+	background:linear-gradient(87deg, #fff 67%, #414A85 54%, #26306b 84%);
+	background:-webkit-linear-gradient(87deg, #fff 67%, #414A85 54%, #26306b 84%);
+	color: black;
 }
 
 .iconS-01 {
@@ -1044,7 +1049,7 @@
 	position: absolute;
 	opacity: 0;
 	padding: 0 1rem 0 1rem;
-	color: #fff9;
+	color: transparent;
 }
 
 .wrapservice:hover .hidelay {
@@ -1052,7 +1057,11 @@
 	opacity: 1;
 	transition: 2s;
 	padding-bottom: 1rem;
-	color: #fff;
+	color:white;
+}
+
+.bg-color-service-4:hover #testcolor4 {
+	color: black;
 }
 
 .lds-dual-ring {
