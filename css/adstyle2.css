@@ -964,34 +964,33 @@
 	border-radius: 5px; 
 	text-align: center;
 	width: 100%;
-	height: 196px;
-	padding: 3rem 0 1rem 0;
+	height: 250px;
+	padding: 4.5rem 0 1rem 0;
 	transition: 1.5s;
 	color: #3b3c3d;
 
 }
 
 .wrapservice:hover {
-	height: 380px;
-	color: white;
+	height: 400px;
+	color: black;
 }
 
 .bg-color-service-1:hover {
-	background:linear-gradient(-80deg, #8f44ad 45%, #8B4D9E 10%, #8f44ad 45%);
-	background:-webkit-linear-gradient(80deg, #8f44ad 54%, #AD69C8 56%, #8f44ad 84%);
+	background:linear-gradient(87deg, #fff 67%, #AD69C8 54%, #8f44ad 84%);
+	background:-webkit-linear-gradient(87deg, #fff 63%, #AD69C8 54%, #8f44ad 84%);
 }
 .bg-color-service-2:hover {
-	background:linear-gradient(-80deg, #6b7ba5 45%, #99A5C5 10%, #6b7ba5 45%);
-	background:-webkit-linear-gradient(80deg, #6b7ba5 54%, #99A5C5 56%, #6b7ba5 84%);
+	background:linear-gradient(87deg, #fff 67%, #99A5C5 54%, #6b7ba5 84%);
+	background:-webkit-linear-gradient(87deg, #fff 63%, #99A5C5 54%, #6b7ba5 84%);
 }
 .bg-color-service-3:hover {
-	background:linear-gradient(-80deg, #46b39e 45%, #6ECEBB 10%, #46b39e 45%);
-	background:-webkit-linear-gradient(80deg, #46b39e 54%, #6ECEBB 56%, #46b39e 84%);
+	background:linear-gradient(87deg, #fff 67%, #6ECEBB 54%, #46b39e 84%);
+	background:-webkit-linear-gradient(87deg, #fff 63%, #6ECEBB 54%, #46b39e 84%);
 }
-
 .bg-color-service-4:hover {
 	background:linear-gradient(87deg, #fff 67%, #414A85 54%, #26306b 84%);
-	background:-webkit-linear-gradient(87deg, #fff 67%, #414A85 54%, #26306b 84%);
+	background:-webkit-linear-gradient(87deg, #fff 63%, #414A85 54%, #26306b 84%);
 	color: black;
 }
 
@@ -1029,6 +1028,21 @@
 .serviceTittle {
 	font-size: 1rem;
     letter-spacing: -0.01rem;
+    transition: 1s;
+}
+
+.wrapservice>hr {
+	    position: absolute;
+    top: 168px;
+    right: 25px;
+    height: 2px;
+    width: calc(100% - 280px);
+    background-color: black;
+    transition: 1s;
+}
+
+.wrapservice:hover hr {
+    width: calc(100% - 55px);
 }
 
 .figure {
@@ -1041,9 +1055,10 @@
 	background-color: blue;
 }
 
-.shapea01, .shapea02, .shapea03, .shapea04 {
-	animation:2s animacion  linear infinite;
-}
+.wrapservice:hover .wrap2 {
+	transform: translate(0px, -20px);
+	transition: 1s;
+} 
 
 .hidelay {
 	position: absolute;
@@ -1057,39 +1072,12 @@
 	opacity: 1;
 	transition: 2s;
 	padding-bottom: 1rem;
-	color:white;
-}
-
-.bg-color-service-4:hover #testcolor4 {
 	color: black;
 }
 
-.lds-dual-ring {
-  display: inline-block;
-  position: absolute;
-  left: 33%;
-  top: 7%;
-}
-
-.lds-dual-ring:after {
-  content: " ";
-  display: block;
-  width: 5.5rem;
-  height: 5.5rem;
-  margin: 8px;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  border-color: #fff transparent #fff transparent;
-  visibility: hidden;
-}
-
-/*.wrapservice:hover .lds-dual-ring:after {
-	animation: lds-dual-ring 1.2s linear infinite;
-}*/
-
 .wrapservice:hover .overanimation div {
 	position: absolute;
-	top: 30px;
+	top: -12px;
     left: 95px;
 	width: 5.5rem;
 	height: 5.5rem;
