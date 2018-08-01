@@ -1004,6 +1004,12 @@
 	transition: 1s;
 }
 
+.icon-1-overlay {
+	position: absolute;
+	visibility: hidden;
+	
+}
+
 .iconOverlay {
 	opacity: 0;
 	position: absolute;
@@ -1038,11 +1044,11 @@
 .wrapservice>hr {
 	position: absolute;
     top: 168px;
-    right: 25px;
+    left: 25px;
     height: 2px;
-    width: calc(100% - 280px);
+    width: calc(100% - 1000px);
     background-color: #3b3c3d;
-    transition: 1s;
+    transition: 1s ease-in;
 }
 
 .wrapservice:hover hr {
