@@ -977,7 +977,7 @@
 
 .wrapservice:hover {
 	height: 400px;
-	color: black;
+	color: #3b3c3d;
 }
 
 .bg-color-service-1:hover {
@@ -1041,7 +1041,7 @@
     right: 25px;
     height: 2px;
     width: calc(100% - 280px);
-    background-color: black;
+    background-color: #3b3c3d;
     transition: 1s;
 }
 
