@@ -977,20 +977,20 @@
 }
 
 .bg-color-service-1:hover {
-	background:linear-gradient(87deg, #fff 67%, #AD69C8 54%, #8f44ad 84%);
-	background:-webkit-linear-gradient(87deg, #fff 63%, #AD69C8 54%, #8f44ad 84%);
+	background:linear-gradient(87deg, #fff 66%, #AD69C8 54%, #8f44ad 84%);
+	background:-webkit-linear-gradient(87deg, #fff 66%, #AD69C8 54%, #8f44ad 84%);
 }
 .bg-color-service-2:hover {
-	background:linear-gradient(87deg, #fff 67%, #99A5C5 54%, #6b7ba5 84%);
-	background:-webkit-linear-gradient(87deg, #fff 63%, #99A5C5 54%, #6b7ba5 84%);
+	background:linear-gradient(87deg, #fff 66%, #99A5C5 54%, #6b7ba5 84%);
+	background:-webkit-linear-gradient(87deg, #fff 66%, #99A5C5 54%, #6b7ba5 84%);
 }
 .bg-color-service-3:hover {
-	background:linear-gradient(87deg, #fff 67%, #6ECEBB 54%, #46b39e 84%);
-	background:-webkit-linear-gradient(87deg, #fff 63%, #6ECEBB 54%, #46b39e 84%);
+	background:linear-gradient(87deg, #fff 66%, #6ECEBB 54%, #46b39e 84%);
+	background:-webkit-linear-gradient(87deg, #fff 66%, #6ECEBB 54%, #46b39e 84%);
 }
 .bg-color-service-4:hover {
-	background:linear-gradient(87deg, #fff 67%, #414A85 54%, #26306b 84%);
-	background:-webkit-linear-gradient(87deg, #fff 63%, #414A85 54%, #26306b 84%);
+	background:linear-gradient(87deg, #fff 66%, #414A85 54%, #26306b 84%);
+	background:-webkit-linear-gradient(87deg, #fff 66%, #414A85 54%, #26306b 84%);
 	color: black;
 }
 
@@ -998,7 +998,7 @@
 	width: 3.5rem;
 	height: auto;
 	z-index: 1;
-	transition: 1s;
+	transition: .5s;
 }
 
 .iconOverlay {
@@ -1021,7 +1021,7 @@
 	transform: scale(1.4);
 	position: static;
 	opacity: 1;	
-	transition: 1s 1s;
+	transition: 1s .5s;
 	z-index: 0;
 }
 
@@ -1087,28 +1087,27 @@
 	-moz-perspective: 500px;
 	-o-perspective: 500px;
 	-ms-perspective: 500px;
-	animation: .5s nextrect linear 1s;
+	animation: .5s nextrect linear .5s;
 	opacity:0;
-	z-index: 2;
 }
 
-.wrapservice:hover .overanimation div:nth-child(2) {
+.wrapservice:hover .overanimation div:nth-child() {
 	background: #6b7ba5;
 	animation: .5s nextrect .75s linear;
 	opacity:0;
 }
 
-.wrapservice:hover .overanimation div:nth-child(3) {
+.wrapservice:hover .overanimation div:nth-child() {
 	background: #46b39e;
 	animation: .5s nextrect linear .5s;
 	opacity:0;
 }
-.overanimation div:nth-child(4) {
+.overanimation div:nth-child(2) {
 	border-radius: 0%;
 	transition: 1s;
 }
 
-.wrapservice:hover .overanimation div:nth-child(4) {
+.wrapservice:hover .overanimation div:nth-child(2) {
 	background: #fff;
 	animation: .5s nextrect .25s linear, nextrectentrance .5s linear;
 	-webkit-transform-origin: 100% 100%;
