@@ -957,6 +957,10 @@
 	padding: .5rem;
 }
 
+.marketing {
+	transition: 1s;
+}
+
 .wrapservice {
 	position: relative;
 	overflow: hidden;
