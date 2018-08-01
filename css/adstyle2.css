@@ -981,28 +981,27 @@
 }
 
 .bg-color-service-1:hover {
-	background:linear-gradient(90deg, #fff 66%, #AD69C8 54%, #8f44ad 84%);
-	background:-webkit-linear-gradient(90deg, #fff 66%, #AD69C8 54%, #8f44ad 84%);
+	background:linear-gradient(86deg, #fff 66%, #AD69C8 54%, #8f44ad 84%);
+	background:-webkit-linear-gradient(86deg, #fff 66%, #AD69C8 54%, #8f44ad 84%);
 }
 .bg-color-service-2:hover {
-	background:linear-gradient(90deg, #fff 66%, #99A5C5 54%, #6b7ba5 84%);
-	background:-webkit-linear-gradient(90deg, #fff 66%, #99A5C5 54%, #6b7ba5 84%);
+	background:linear-gradient(86deg, #fff 66%, #99A5C5 54%, #6b7ba5 84%);
+	background:-webkit-linear-gradient(86deg, #fff 66%, #99A5C5 54%, #6b7ba5 84%);
 }
 .bg-color-service-3:hover {
-	background:linear-gradient(90deg, #fff 66%, #6ECEBB 54%, #46b39e 84%);
-	background:-webkit-linear-gradient(90deg, #fff 66%, #6ECEBB 54%, #46b39e 84%);
+	background:linear-gradient(86deg, #fff 66%, #6ECEBB 54%, #46b39e 84%);
+	background:-webkit-linear-gradient(86deg, #fff 66%, #6ECEBB 54%, #46b39e 84%);
 }
 .bg-color-service-4:hover {
-	background:linear-gradient(90deg, #fff 66%, #414A85 54%, #26306b 84%);
-	background:-webkit-linear-gradient(90deg, #fff 66%, #414A85 54%, #26306b 84%);
-	color: black;
+	background:linear-gradient(86deg, #fff 66%, #414A85 54%, #26306b 84%);
+	background:-webkit-linear-gradient(86deg, #fff 66%, #414A85 54%, #26306b 84%);
 }
 
 .iconS-01 {
 	width: 3.5rem;
 	height: auto;
 	z-index: 1;
-	transition: .5s;
+	transition: 1s;
 }
 
 .iconOverlay {
@@ -1016,6 +1015,7 @@
 .wrapservice:hover .iconS-01 {
 	position: absolute;
 	opacity: 0;
+	transform: rotate(360deg);
 }
 
 .wrapservice:hover .iconOverlay {
@@ -1036,7 +1036,7 @@
 }
 
 .wrapservice>hr {
-	    position: absolute;
+	position: absolute;
     top: 168px;
     right: 25px;
     height: 2px;
@@ -1055,13 +1055,16 @@
 	width: 5rem;
 	height: 5rem;
 	border-radius: 100%;
-	border-color: black;
+	border-color: #3b3c3d;
 	background-color: blue;
 }
 
-.wrapservice:hover .wrap2 {
-	transform: translate(0px, -20px);
+.wrap2 {
 	transition: 1s;
+}
+
+.wrapservice:hover .wrap2 {
+	transform: translate(0px, -35px);
 } 
 
 .hidelay {
@@ -1076,7 +1079,7 @@
 	opacity: 1;
 	transition: 2s;
 	padding-bottom: 1rem;
-	color: black;
+	color: #3b3c3d;
 }
 
 .wrapservice:hover .overanimation div {
