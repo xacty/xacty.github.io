@@ -1033,14 +1033,15 @@
 .serviceTittle {
 	font-size: 16px;
     letter-spacing: -0.01rem;
-    margin-bottom: -10px;
+    margin-bottom: -16px;
     transition: 1s;
 }
 
 .wrapservice>hr {
-	position: absolute;
-    top: 168px;
-    left: 25px;
+	position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: -13px;
     height: 2px;
     width: calc(100% - 1000px);
     background-color: #3b3c3d;
@@ -1049,7 +1050,7 @@
 
 .wrapservice:hover hr {	
     transition: 1s .5s;
-    width: calc(100% - 55px);
+    width: calc(100% - 5px);
 }
 
 .wrapservice #services-text {
@@ -1093,7 +1094,6 @@
 	position: static;
 	opacity: 1;
 	transition: 2s;
-	padding-bottom: 1rem;
 	padding-top: 1rem;
 	color: #3b3c3d;
 }
