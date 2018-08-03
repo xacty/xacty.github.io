@@ -1423,10 +1423,6 @@ wrapservice:hover .overanimation div:nth-child() {
 		margin-top: -7%;
 	}
 
-	.texton2 {
-		right: -11%;
-	}
-
 	.descPort {
 		width: 100%;
 	}	
@@ -1540,10 +1536,6 @@ wrapservice:hover .overanimation div:nth-child() {
 	.portdesc {
     	padding: 0% 0 7% 0%;
 	}
-
-	.texton2 {
-		right: 10%;
-	}
 }
 
 @media screen and  (max-width: 768px){
@@ -1633,10 +1625,6 @@ wrapservice:hover .overanimation div:nth-child() {
 	margin-top: 0;
 	transform: scale(0.8);
 	}
-
-	.texton2 {
-    right: 1%;
-	}
 }
 
 @media screen and (max-width: 414px){
@@ -1651,10 +1639,6 @@ wrapservice:hover .overanimation div:nth-child() {
 	    transform: scale(.65);
 	    margin-top: -22%;
 	    left: -8%;
-	}
-
-	.texton2 {
-	    right: -18%;
 	}
 
 	.bg-color0 {
@@ -1720,10 +1704,6 @@ wrapservice:hover .overanimation div:nth-child() {
 	    left: -20%;
 	    margin-top: -18%;
 	    transform: scale(0.55);
-	}
-
-	.texton2 {
-	    right: -27%;
 	}
 
 	.esto5 {
