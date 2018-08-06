@@ -1016,7 +1016,6 @@
 .wrapservice:hover .iconS-01 {
 	position: absolute;
 	opacity: 0;
-	transform: rotate(360deg);
 }
 
 .wrapservice:hover .iconOverlay {
