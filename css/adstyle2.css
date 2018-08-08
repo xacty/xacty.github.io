@@ -954,7 +954,7 @@
 /*Services Main*/
 
 .colService {
-	padding: .5rem;
+	padding: 1rem;
 }
 
 .marketing {
@@ -969,7 +969,7 @@
 	text-align: center;
 	width: 100%;
 	height: 250px;
-	padding: 2.5rem 1rem 1rem 1rem;
+	padding: 2.5rem 1.5rem 1rem 1.5rem;
 	transition: 1.5s;
 	color: #3b3c3d;
 
@@ -978,7 +978,7 @@
 .wrapservice:hover {
 	height: auto;
 	color: #3b3c3d;
-	padding: 4.5rem 1rem 1rem 1rem;
+	padding-top: 4.5rem;
 }
 
 .bg-color-service-1:hover {
