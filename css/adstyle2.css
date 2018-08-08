@@ -1100,6 +1100,144 @@
 	color: #3b3c3d;
 }
 
+wrapservice:hover .overanimation div {
+	position: absolute;
+	top: -12px;
+    left: 95px;
+	width: 5.5rem;
+	height: 5.5rem;
+	border-radius: 50%;
+	background: #26306b;
+	-webkit-perspective: 500px;
+	-moz-perspective: 500px;
+	-o-perspective: 500px;
+	-ms-perspective: 500px;
+	animation: .5s nextrect linear .5s;
+	opacity:0;
+}
+
+wrapservice:hover .overanimation div:nth-child() {
+	background: #6b7ba5;
+	animation: .5s nextrect .75s linear;
+	opacity:0;
+}
+
+wrapservice:hover .overanimation div:nth-child() {
+	background: #46b39e;
+	animation: .5s nextrect linear .5s;
+	opacity:0;
+}
+.overanimation div:nth-child(2) {
+	border-radius: 0%;
+	transition: 1s;
+}
+
+.wrapservice:hover .overanimation div:nth-child(2) {
+	background: #fff;
+	animation: .5s nextrect .25s linear, nextrectentrance .5s linear;
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-webkit-transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+	-moz-transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+	-o-transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+	-ms-transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+	transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+	opacity:0;
+	z-index: 2;
+	}
+
+@keyframes nextrectentrance {
+	@from {
+		opacity: 1;
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		-moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		-o-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		-ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+}
+@keyframes nextrect {
+	0% {
+		opacity: 1;
+		
+	}
+	50% {
+		-webkit-transform-origin: 0% 0%;
+		-moz-transform-origin: 0% 0%;
+		-o-transform-origin: 0% 0%;
+		-ms-transform-origin: 0% 0%;
+		transform-origin: 0% 0%;
+		-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		-moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		-o-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		-ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform-origin: 0% 0%;
+		-moz-transform-origin: 0% 0%;
+		-o-transform-origin: 0% 0%;
+		-ms-transform-origin: 0% 0%;
+		transform-origin: 0% 0%;
+		-webkit-transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
+		-moz-transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
+		-o-transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
+		-ms-transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
+		transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
+
+	}
+}
+
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animacion {
+	0% {		
+		border-color: #fff transparent #fff transparent;
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+	50% {
+		border-color: black transparent black transparent;
+
+		transform: rotate(-360deg);
+		opacity: 1;
+	}
+	
+	75% {
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-o-transform: scale(1.1);
+		transform: scale(1.1);
+		opacity: 1;
+	}
+	100%{
+		border-color: #fff transparent #fff transparent;
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+		opacity: 0;
+	}
+}
 
 /*responsive*/
 @media (max-width: 1600px){
@@ -1635,3 +1773,37 @@
 		}
 	}
 }
+
+.grid-item,
+.grid-sizer {
+  width: 25%;
+  padding: 5px;
+}
+
+.grid-item {
+  float: left;
+}
+
+/* grid-item-content is visible, and transitions size */
+.grid-item-content {
+  width: 100%;
+  height: 100%;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+  -webkit-transition: width 0.4s, height 0.4s;
+          transition: width 0.4s, height 0.4s;
+}
+
+.grid-item:hover .grid-item-content {
+  border-color: white;
+  cursor: pointer;
+}
+
+/* both item and item content change size */
+.grid-item.is-expanded {
+  width: 60%;
+  height: 200px;
+  z-index: 2;
+}
+
+.grid-item.is-expanded .grid-item-content {
