@@ -962,7 +962,7 @@
 	overflow: hidden;
 	background: white;
 	text-align: center;
-	text-rendering: optimizeSpeed
+	text-rendering: optimizeSpeed;
 	width: 100%;
 	height: 302px;
 	padding: 4.5rem 1.5rem 1rem 1.5rem;
@@ -978,6 +978,23 @@
 	border-radius: 5px;
 	box-shadow: 2px 2px 8px #00000020;
 	z-index: 1;
+}
+
+.bg-color-service-1 {
+	background: linear-gradient(315deg, #fff 448px, #AD69C8 54%, #8f44ad 84%);
+	background: -webkit-linear-gradient(315deg, #fff 448px, #AD69C8 54%, #8f44ad 84%);
+}
+.bg-color-service-2 {
+	background:linear-gradient(315deg, #fff 448px, #99A5C5 54%, #6b7ba5 84%);
+	background:-webkit-linear-gradient(315deg, #fff 448px, #99A5C5 54%, #6b7ba5 84%);
+}
+.bg-color-service-3 {
+	background:linear-gradient(315deg, #fff 448px, #6ECEBB 54%, #46b39e 84%);
+	background:-webkit-linear-gradient(315deg, #fff 448px, #6ECEBB 54%, #46b39e 84%);
+}
+.bg-color-service-4 {
+	background:linear-gradient(315deg, #fff 178px, #414A85 54%, #26306b 84%);
+	background:-webkit-linear-gradient(315deg, #fff 448px, #414A85 54%, #26306b 84%);
 }
 
 .colService:hover .bg-color-service-1 {
