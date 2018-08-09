@@ -954,13 +954,13 @@
 /*Services Main*/
 
 .colService {
-	padding: 1rem;
+	padding: 0rem;
 }
 
 .wrapservice {
 	position: relative;
 	overflow: hidden;
-	border-radius: 5px;
+	border:1px solid #eee;
 	background: white;
 	text-align: center;
 	width: 100%;
@@ -974,12 +974,12 @@
 .colService:hover .wrapservice {
 	color: #3b3c3d;
 	padding-top: 4.5rem;
-	transform: rotate3d(0,1,0,180deg);
+	transform: scale(1.1);
+	border-radius: 5px;
+	box-shadow: 2px 2px 8px #eee;
+	z-index: 1;
 }
 
-.colService:hover .wrap2>img, .colService:hover .wrapservice>p, .colService:hover .serviceTittle {
-    transform: rotate3d(0,1,0,180deg) !important;
-}
 .colService:hover .bg-color-service-1 {
 	background:linear-gradient(86deg, #fff 178px, #AD69C8 54%, #8f44ad 84%);
 	background:-webkit-linear-gradient(86deg, #fff 178px, #AD69C8 54%, #8f44ad 84%);
@@ -1061,8 +1061,7 @@
 .colService:hover #services-text {
 	opacity: 0;
 	transition: .6s;
-	padding-left: 0
-	rem;
+	padding-left: 0rem;
 	position: absolute;
 }
 
@@ -1089,7 +1088,6 @@
 	opacity: 0;
 	padding: 0 1rem 0 1rem;
 	color: transparent;
-	transform: rotate3d(0,1,0,180deg)
 }
 
 .colService:hover .hidelay {
