@@ -974,7 +974,7 @@
 .colService:hover .wrapservice {
 	color: #3b3c3d;
 	padding-top: 4.5rem;
-	transform: scale(1.1);
+	transform: scale(1.05);
 	border-radius: 5px;
 	box-shadow: 2px 2px 8px #eee;
 	z-index: 1;
