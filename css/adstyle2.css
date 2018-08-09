@@ -962,10 +962,11 @@
 	overflow: hidden;
 	background: white;
 	text-align: center;
+	text-rendering: optimizeSpeed
 	width: 100%;
 	height: 302px;
 	padding: 4.5rem 1.5rem 1rem 1.5rem;
-	transition: 1.5s;
+	transition: 1.5s linear;
 	color: #3b3c3d;
 
 }
@@ -975,7 +976,7 @@
 	padding-top: 4.5rem;
 	transform: scale(1.05);
 	border-radius: 5px;
-	box-shadow: 2px 2px 8px #eee;
+	box-shadow: 2px 2px 8px #00000020;
 	z-index: 1;
 }
 
@@ -1022,7 +1023,7 @@
 	transform: scale(1.4);
 	position: static;
 	opacity: 1;	
-	transition: 1s .5s;
+	transition: 1s .5s linear;
 	z-index: 0;
 }
 
@@ -1030,7 +1031,7 @@
 	font-size: 16px;
     letter-spacing: -0.01rem;
     margin-bottom: -10px;
-    transition: 1s;
+    transition: 1s linear;
 }
 .grid-item {
 	width: 25%;
@@ -1054,7 +1055,7 @@
 .wrapservice #services-text {
 	font-size: 14px;
 	line-height: 20px;
-	transition: 1s .5s;
+	transition: 1s .5s linear;
 	position: relative;
 }
 .colService:hover #services-text {
@@ -1075,7 +1076,7 @@
 }
 
 .wrap2, .iconS-01, .marketing {
-	transition: 1s;
+	transition: 1s linear;
 }
 
 .colService:hover .wrap2 {
