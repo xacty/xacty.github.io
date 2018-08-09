@@ -954,13 +954,12 @@
 /*Services Main*/
 
 .colService {
-	padding: 0rem;
+	padding: 1rem;
 }
 
 .wrapservice {
 	position: relative;
 	overflow: hidden;
-	border:1px solid #eee;
 	background: white;
 	text-align: center;
 	width: 100%;
