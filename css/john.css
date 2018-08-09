@@ -1,0 +1,23 @@
+.hero:before {
+	background: none !important;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: -moz-linear-gradient(45deg, #46b39e 0%, #8f44ad 100%);
+	background: -webkit-linear-gradient(45deg, #46b39e 0%,#8f44ad 100%);
+	background: linear-gradient(45deg, #46b39e 0%,#8f44ad 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b39e', endColorstr='#8f44ad',GradientType=1 );
+	z-index: -1;
+}
+
+.video-bg {
+	mix-blend-mode: multiply;
+	opacity: 0.5 !important;
+	background: url(https://cdn.shopify.com/s/files/1/1810/5253/t/2/assets/bg4.jpg) no-repeat center bottom;
+	background-size: cover;
+}
