@@ -971,24 +971,28 @@
 
 }
 
-.wrapservice:hover {
+.colService:hover .wrapservice {
 	color: #3b3c3d;
 	padding-top: 4.5rem;
+	transform: rotate3d(0,1,0,180deg);
 }
 
-.bg-color-service-1:hover {
+.colService:hover .wrap2>img, .colService:hover .wrapservice>p, .colService:hover .serviceTittle {
+    transform: rotate3d(0,1,0,180deg) !important;
+}
+.colService:hover .bg-color-service-1 {
 	background:linear-gradient(86deg, #fff 178px, #AD69C8 54%, #8f44ad 84%);
 	background:-webkit-linear-gradient(86deg, #fff 178px, #AD69C8 54%, #8f44ad 84%);
 }
-.bg-color-service-2:hover {
+.colService:hover .bg-color-service-2 {
 	background:linear-gradient(86deg, #fff 178px, #99A5C5 54%, #6b7ba5 84%);
 	background:-webkit-linear-gradient(86deg, #fff 178px, #99A5C5 54%, #6b7ba5 84%);
 }
-.bg-color-service-3:hover {
+.colService:hover .bg-color-service-3 {
 	background:linear-gradient(86deg, #fff 178px, #6ECEBB 54%, #46b39e 84%);
 	background:-webkit-linear-gradient(86deg, #fff 178px, #6ECEBB 54%, #46b39e 84%);
 }
-.bg-color-service-4:hover {
+.colService:hover .bg-color-service-4 {
 	background:linear-gradient(86deg, #fff 178px, #414A85 54%, #26306b 84%);
 	background:-webkit-linear-gradient(86deg, #fff 178px, #414A85 54%, #26306b 84%);
 }
@@ -1007,12 +1011,12 @@
 	z-index: 1;
 }
 
-.wrapservice:hover .iconS-01 {
+.colService:hover .iconS-01 {
 	position: absolute;
 	opacity: 0;
 }
 
-.wrapservice:hover .iconOverlay {
+.colService:hover .iconOverlay {
 	-webkit-transform: scale(1.4);
 	-ms-transform: scale(1.4);
 	-o-transform: scale(1.4);
@@ -1043,7 +1047,7 @@
     transition: 1s ease-in;
 }
 
-.wrapservice:hover hr {	
+.colService:hover hr {	
     transition: 1s .5s;
     width: calc(100% - 55px);
 }
@@ -1054,7 +1058,7 @@
 	transition: 1s .5s;
 	position: relative;
 }
-.wrapservice:hover #services-text {
+.colService:hover #services-text {
 	opacity: 0;
 	transition: .6s;
 	padding-left: 0
@@ -1076,7 +1080,7 @@
 	transition: 1s;
 }
 
-.wrapservice:hover .wrap2 {
+.colService:hover .wrap2 {
 	transform: translate(0px, -35px);
 } 
 
@@ -1085,9 +1089,10 @@
 	opacity: 0;
 	padding: 0 1rem 0 1rem;
 	color: transparent;
+	transform: rotate3d(0,1,0,180deg)
 }
 
-.wrapservice:hover .hidelay {
+.colService:hover .hidelay {
 	position: static;
 	opacity: 1;
 	transition: 2s;
@@ -1664,4 +1669,3 @@
   z-index: 2;
 }
 
-.grid-item.is-expanded .grid-item-content {
