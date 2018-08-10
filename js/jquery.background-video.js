@@ -166,7 +166,7 @@
 
 
 			// Play / pause button
-			if( el_settings.showPausePlay && !iOS ) {
+			if( el_settings.showPausePlay ) {
 				// Append pauseplay element created earlier
 				$container.append($pauseplay);
 				// Position element
