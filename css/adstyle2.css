@@ -1206,7 +1206,6 @@
 .colService:hover #services-text {
 	opacity: 0;
 	transition: .6s;
-	padding-left: 0rem;
 	position: absolute;
 }
 
@@ -1221,7 +1220,7 @@
 }
 
 .wrap2, .iconS-01, .marketing {
-	transition: 1s linear;
+	transition: 1s ease-in-out;
 }
 
 .colService:hover .wrap2 {
@@ -1231,7 +1230,7 @@
 .hidelay {
 	position: absolute;
 	opacity: 0;
-	padding: 0 1rem 0 1rem;
+	padding: 0 .5rem 0 .5rem;
 	color: transparent;
 }
 
