@@ -1627,6 +1627,16 @@
 
 @media screen and (max-width: 595px){
 
+	.serviceTittle {
+    font-size: 14px;
+    line-height: 1rem;
+	}
+
+	.colService #services-text, .colService:hover .hidelay {
+    font-size: 12px;
+    line-height: 1rem;
+	}
+
 	.column01 {
     left: 0;
 	margin-top: 0;
