@@ -886,7 +886,7 @@ content: 'we get it. we got you.';
 	background-attachment: fixed;
 }
 
-.btn-filters {
+.btn-filters, .services-row {
 	padding-bottom: 30px;
 }
 
