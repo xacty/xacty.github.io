@@ -954,76 +954,6 @@
 	}
 
 }
-/*test*/
-
-
-.button1 {
-  background-size: 100%;
-  background-image: linear-gradient(#fff, #ccc);
-  position: relative;
-  z-index: 100;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0.45rem;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  color: #333;
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 300;
-  padding: 0.725rem 0.975rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.button1:before {
-  border-radius: inherit;
-  background-image: linear-gradient(#ccc, #fff);
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -100;
-  transition: opacity 0.45s ease-in-out;
-}
-.button1:hover:before {
-  opacity: 1;
-}
-.button1:active:before {
-  opacity: 0;
-}
-
-.testershape {
-	padding: 5rem;
-	color: black;
-	position: relative;
-	text-align: center;
-	background: -webkit-linear-gradient(-45deg, #1e5799 0%,#650072 46%,#f9ff89 100%);
-	z-index: 1;
-	opacity: 1;
-}
-.testershape:before {
-	position: absolute;
-	content: '';
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: -webkit-radial-gradient(center, ellipse cover, #1e5799 0%,#650072 46%,#f9ff89 100%);
-	z-index: -1;
-	opacity: 0;
-	transition: opacity 1s ease;
-}
-.testershape:hover:before {
-	opacity: 1;
-}
 
 /*Services Main*/
 
@@ -1038,16 +968,21 @@
 	width: 100%;
 	height: 302px;
 	padding: 4.5rem 1.5rem 1rem 1.5rem;
-	transition: 1.5s linear;
+	transition: 1s linear;
 	color: #3b3c3d;
-	background:linear-gradient(-45deg, #fff 447px, #AD69C8 54%, #8f44ad 84%);
-	background:-webkit-linear-gradient(-45deg, #fff 447px, #AD69C8 54%, #8f44ad 84%);
+	background:linear-gradient(-45deg, #fff 92%, #AD69C8 54%, #8f44ad 84%);
+	background:-webkit-linear-gradient(-45deg, #fff 92%, #AD69C8 54%, #8f44ad 84%);
+	background:-moz-linear-gradient(-45deg, #fff 92%, #AD69C8 54%, #8f44ad 84%);
+	background:-o-linear-gradient(-45deg, #fff 92%, #AD69C8 54%, #8f44ad 84%);
 	opacity: 1;
 	z-index: 1;
 }
 .wrap-service-marketing:hover {
 	color: #3b3c3d;
 	padding-top: 4.5rem;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
 	transform: scale(1.05);
 	border-radius: 5px;
 	box-shadow: 2px 2px 8px #00000020;
@@ -1059,9 +994,11 @@
 	right: 0;
 	bottom: 0;
 	content: '';
-	background:linear-gradient(88deg, #fff 178px, #AD69C8 54%, #8f44ad 84%) 100% ;
-	background:-webkit-linear-gradient(88deg, #fff 178px, #AD69C8 54%, #8f44ad 84%) 100% ;
-	transition: opacity 1.5s linear;
+	background: linear-gradient(88deg, #fff 178px, #AD69C8 54%, #8f44ad 84%);
+	background:-webkit-linear-gradient(88deg, #fff 178px, #AD69C8 54%, #8f44ad 84%);
+	background: -moz-linear-gradient(88deg, #fff 178px, #AD69C8 54%, #8f44ad 84%);
+	background: -o-linear-gradient(88deg, #fff 178px, #AD69C8 54%, #8f44ad 84%);
+	transition: opacity 1s cubic-bezier(0, 0, 0.91, 0.41);
 	opacity: 0;
 	z-index: -1;
 }
@@ -1076,16 +1013,21 @@
 	width: 100%;
 	height: 302px;
 	padding: 4.5rem 1.5rem 1rem 1.5rem;
-	transition: 1.5s linear;
+	transition: 1s linear;
 	color: #3b3c3d;
-	background:linear-gradient(-45deg, #fff 447px, #99A5C5 54%, #6b7ba5 84%);
-	background:-webkit-linear-gradient(-45deg, #fff 447px, #99A5C5 54%, #6b7ba5 84%);
+	background:linear-gradient(-45deg, #fff 92%, #99A5C5 54%, #6b7ba5 84%);
+	background:-webkit-linear-gradient(-45deg, #fff 92%, #99A5C5 54%, #6b7ba5 84%);
+	background:-moz-linear-gradient(-45deg, #fff 92%, #99A5C5 54%, #6b7ba5 84%);
+	background:-o-linear-gradient(-45deg, #fff 92%, #99A5C5 54%, #6b7ba5 84%);
 	opacity: 1;
 	z-index: 1;
 }
 .wrap-service-writing:hover {
 	color: #3b3c3d;
 	padding-top: 4.5rem;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
 	transform: scale(1.05);
 	border-radius: 5px;
 	box-shadow: 2px 2px 8px #00000020;
@@ -1097,9 +1039,11 @@
 	right: 0;
 	bottom: 0;
 	content: '';
-	background:linear-gradient(88deg, #fff 178px, #99A5C5 54%, #6b7ba5 84%) 100% ;
-	background:-webkit-linear-gradient(88deg, #fff 178px, #99A5C5 54%, #6b7ba5 84%) 100% ;
-	transition: opacity 1.5s linear;
+	background:linear-gradient(88deg, #fff 178px, #99A5C5 54%, #6b7ba5 84%);
+	background:-webkit-linear-gradient(88deg, #fff 178px, #99A5C5 54%, #6b7ba5 84%);
+	background:-moz-linear-gradient(88deg, #fff 178px, #99A5C5 54%, #6b7ba5 84%);
+	background:-o-linear-gradient(88deg, #fff 178px, #99A5C5 54%, #6b7ba5 84%);
+	transition: opacity 1s cubic-bezier(0, 0, 0.91, 0.41);
 	opacity: 0;
 	z-index: -1;
 }
@@ -1114,16 +1058,21 @@
 	width: 100%;
 	height: 302px;
 	padding: 4.5rem 1.5rem 1rem 1.5rem;
-	transition: 1.5s linear;
+	transition: 1s linear;
 	color: #3b3c3d;
-	background:linear-gradient(-45deg, #fff 447px, #6ECEBB 54%, #46b39e 84%);
-	background:-webkit-linear-gradient(-45deg, #fff 447px, #6ECEBB 54%, #46b39e 84%);
+	background:linear-gradient(-45deg, #fff 92%, #6ECEBB 54%, #46b39e 84%);
+	background:-webkit-linear-gradient(-45deg, #fff 92%, #6ECEBB 54%, #46b39e 84%);
+	background:-moz-linear-gradient(-45deg, #fff 92%, #6ECEBB 54%, #46b39e 84%);
+	background:-o-linear-gradient(-45deg, #fff 92%, #6ECEBB 54%, #46b39e 84%);
 	opacity: 1;
 	z-index: 1;
 }
 .wrap-service-design:hover {
 	color: #3b3c3d;
 	padding-top: 4.5rem;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
 	transform: scale(1.05);
 	border-radius: 5px;
 	box-shadow: 2px 2px 8px #00000020;
@@ -1135,9 +1084,11 @@
 	right: 0;
 	bottom: 0;
 	content: '';
-	background:linear-gradient(88deg, #fff 178px, #6ECEBB 54%, #46b39e 84%) 100% ;
-	background:-webkit-linear-gradient(88deg, #fff 178px, #6ECEBB 54%, #46b39e 84%) 100% ;
-	transition: opacity 1.5s linear;
+	background:linear-gradient(88deg, #fff 178px, #6ECEBB 54%, #46b39e 84%);
+	background:-webkit-linear-gradient(88deg, #fff 178px, #6ECEBB 54%, #46b39e 84%);
+	background:-moz-linear-gradient(88deg, #fff 178px, #6ECEBB 54%, #46b39e 84%);
+	background:-o-linear-gradient(88deg, #fff 178px, #6ECEBB 54%, #46b39e 84%);
+	transition: opacity 1s cubic-bezier(0, 0, 0.91, 0.41);
 	opacity: 0;
 	z-index: -1;
 }
@@ -1152,16 +1103,21 @@
 	width: 100%;
 	height: 302px;
 	padding: 4.5rem 1.5rem 1rem 1.5rem;
-	transition: 1.5s linear;
+	transition: 1s linear;
 	color: #3b3c3d;
-	background:linear-gradient(-45deg, #fff 447px, #414A85 54%, #26306b 84%);
-	background:-webkit-linear-gradient(-45deg, #fff 447px, #414A85 54%, #26306b 84%);
+	background:linear-gradient(-45deg, #fff 92%, #414A85 54%, #26306b 84%);
+	background:-webkit-linear-gradient(-45deg, #fff 92%, #414A85 54%, #26306b 84%);
+	background:-moz-linear-gradient(-45deg, #fff 92%, #414A85 54%, #26306b 84%);
+	background:-o-linear-gradient(-45deg, #fff 92%, #414A85 54%, #26306b 84%);
 	opacity: 1;
 	z-index: 1;
 }
 .wrap-service-business:hover {
 	color: #3b3c3d;
 	padding-top: 4.5rem;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
 	transform: scale(1.05);
 	border-radius: 5px;
 	box-shadow: 2px 2px 8px #00000020;
@@ -1173,9 +1129,11 @@
 	right: 0;
 	bottom: 0;
 	content: '';
-	background:linear-gradient(88deg, #fff 178px, #414A85 54%, #26306b 84%) 100% ;
-	background:-webkit-linear-gradient(88deg, #fff 178px, #414A85 54%, #26306b 84%) 100% ;
-	transition: opacity 1.5s linear;
+	background:linear-gradient(88deg, #fff 178px, #414A85 54%, #26306b 84%);
+	background:-webkit-linear-gradient(88deg, #fff 178px, #414A85 54%, #26306b 84%);
+	background:-moz-linear-gradient(88deg, #fff 178px, #414A85 54%, #26306b 84%);
+	background:-o-linear-gradient(88deg, #fff 178px, #414A85 54%, #26306b 84%);
+	transition: opacity 1s cubic-bezier(0, 0, 0.91, 0.41);
 	opacity: 0;
 	z-index: -1;
 }
@@ -1619,12 +1577,7 @@
 		left: 2%;
 	}
 
-	.desc3 {
-		position: relative;
-		width: 100%;
-	}
-
-	.desc4 {
+	.desc3, .desc4 {
 		position: relative;
 		width: 100%;
 	}
@@ -1663,11 +1616,7 @@
 		padding: 3px;
 	}
 
-	#arttecaLogo {
-		top: 15%;
-	}
-
-	#palmaLogo {
+	#arttecaLogo, #palmaLogo {
 		top: 15%;
 	}
 
@@ -1677,6 +1626,10 @@
 }
 
 @media screen and (max-width: 595px){
+
+	.colService {
+		width: 100%;
+	}
 
 	.column01 {
     left: 0;
