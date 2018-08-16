@@ -894,7 +894,6 @@ content: 'we get it. we got you.';
 	margin-top: 15px;
 	margin-left: 2px;
 	margin-right: 2px;
-	background: transparent;
 	font-family: 'Poppins';
 	min-width: 120px;
 }
@@ -904,8 +903,9 @@ content: 'we get it. we got you.';
 }
 
 .btn-filter-all {
-	border: 1px solid #3b3c3d;
-	color: #3b3c3d;
+	border: 1px solid #222;
+    background: #222;
+    color: #fff;
 }
 
 .btn-filter-all.active,
@@ -917,50 +917,54 @@ content: 'we get it. we got you.';
 }
 
 .btn-filter-design {
-	border: 1px solid #46b39e;
-	color: #46b39e;
-}
-
-.btn-filter-design:hover,
-.btn-filter-design:focus {
 	background: #46b39e;
 	border: 1px solid #46b39e;
 	color: #fff;
 }
 
-.btn-filter-writing {
-	border: 1px solid #6b7ba5;
-	color: #6b7ba5;
+.btn-filter-design:hover,
+.btn-filter-design:focus {
+	background: #6ECEBB;
+	border: 1px solid #6ECEBB;
+	color: #fff;
 }
 
-.btn-filter-writing:hover,
-.btn-filter-writing:focus {
-	background: #6b7ba5;
+.btn-filter-writing {
+	background: #6B7BA5;
 	border: 1px solid #6b7ba5;
 	color: #fff;
 }
 
-.btn-filter-marketing {
-	border: 1px solid #8f44ad;
-	color: #8f44ad;
+.btn-filter-writing:hover,
+.btn-filter-writing:focus {
+	background: #99A5C5;
+	border: 1px solid #99A5C5;
+	color: #fff;
 }
 
-.btn-filter-marketing:hover,
-.btn-filter-marketing:focus {
+.btn-filter-marketing {
 	background: #8f44ad;
 	border: 1px solid #8f44ad;
 	color: #fff;
 }
 
+.btn-filter-marketing:hover,
+.btn-filter-marketing:focus {
+	background: #AD69C8;
+	border: 1px solid #AD69C8;
+	color: #fff;
+}
+
 .btn-filter-business {
+	background: #26306b;
 	border: 1px solid #26306b;
-	color: #26306b;
+	color: #fff;
 }
 
 .btn-filter-business:hover,
 .btn-filter-business:focus {
-	background: #26306b;
-	border: 1px solid #26306b;
+	background: #6b7ba5;
+	border: 1px solid #6b7ba5;
 	color: #fff;
 }
 
