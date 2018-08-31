@@ -565,14 +565,21 @@
 	margin-top: -100px;
 }
 
-#arttecaLogo {
+#arttecaLogo,#palmaLogo,#pimposLogo {
 	top: 40%; 
 	width: 60%;
 }
 
-#palmaLogo {
-	top: 40%; 
-	width: 60%;
+#brookeLogo1 {
+	max-width: 80%;
+}
+
+#brookeLogo2 {
+	max-width: 80%;
+}
+
+#brookeLogoPortfolio {
+	width: 80%;
 }
 
 /*PortfolioV2*/
@@ -664,10 +671,10 @@
 #zacasha {
 	animation: zacasha 10s ease infinite;
 }
-#zacasha2 {
+#zacasha2,#pimpos2 {
 	animation: zacashatwo 10s ease infinite;
 }
-#zacasha3 {
+#zacasha3,#pimpos3 {
 	animation: zacashathree 10s ease infinite;
 }
 
@@ -1243,6 +1250,24 @@
 	color: #3b3c3d;
 }
 
+
+/*partner home section*/
+.partner-row {
+	text-align: center;
+}
+
+.partner-ul li {
+	display: inline-block;
+    max-width: 200px;
+    min-width: 200px;
+    padding: 30px;
+    margin: 0 10px 0 10px;
+    transition: 1s;
+}
+
+.partner-ul li:hover {
+	transform: translate(0px, -8px);
+}
 
 /*responsive*/
 @media (max-width: 1600px){
