@@ -27,15 +27,76 @@
 /*Needs home section*/
 
 .margin-needs {
-	margin-top: 8%;
+	margin-top: 4%;
 }
 
-.icon-animation svg {
+.icon-animation #overflow-svg {
 	overflow: visible !important;
 }
 
-#ruler, #pencil, .h3-needs, #st6, #st7, #st8, #st9, .st3  {
+#ruler, #pencil, .h3-needs, #st6, #st7, #st8, #st9 {
 	transition: 1s;
+}
+
+.st0 {
+	transition: 1s 1s;
+}
+
+.icon-animation:hover .st0 {
+	transform-origin: 100% 100%;
+    transform: translate(25px, -17px) rotate(-45deg);
+    transition: 1s;
+}
+
+#XMLID_1_ {
+    transform-origin: 100% 100%;
+    transform: translate(0px, 3px);
+    transition: 1s 0s;
+}
+
+.icon-animation:hover #XMLID_1_ {
+    transform: translate(90px, 3px) scale(.7);
+    transition: 1s 1s;
+}
+
+#circle-svg {
+	overflow: hidden;
+    position: absolute !important;
+    top: 152px;
+    left: 62px;
+    z-index: -1;
+}
+
+.design-text {
+	color: #3b3c3d;
+	transition: 1s 0s;
+}
+
+.icon-animation:hover .design-text {
+	color: #fff;
+	transition: 1s 1s;
+}
+
+.circle1, .circle2, .circle3 {
+	transform: translate(0px, -162px);
+	transition: 1s 0s;
+    z-index: -1;
+}
+
+.icon-animation:hover .circle1 {
+	transform: translate(0px, -71px);
+	transition: 1s 1s;
+    z-index: -1;
+}
+.icon-animation:hover .circle2 {
+	transform: translate(0px, -71px);
+	transition: 1s 1.20s;
+    z-index: -1;
+}
+.icon-animation:hover .circle3 {
+	transform: translate(0px, -71px);
+	transition: 1s 1.45s;
+    z-index: -1;
 }
 
 #ruler {
@@ -59,14 +120,11 @@
 }
 
 .h3-needs {
-	top: -60px;
-    position: relative;
-    opacity: 0;
+    color: #3b3c3d;
 }
 
 .icon-animation:hover .home-needs-title-overlay>.h3-needs {
-	top:0px;
-	opacity: 1;
+	color: #6b7ba5;
 }
 
 #feather {
@@ -80,7 +138,9 @@
 	-o-animation: feather 1.5s linear forwards;
 	animation: feather 1.5s linear forwards;
 }
-
+.st3 {
+	transition: 1.5s;
+}
 .icon-animation:hover .st3 {
 	fill:#46B39E;
 }
