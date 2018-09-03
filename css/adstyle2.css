@@ -34,7 +34,7 @@
 	overflow: visible !important;
 }
 
-#ruler, #pencil, .h3-needs {
+#ruler, #pencil, .h3-needs, #st6, #st7, #st8, #st9  {
 	transition: 1s;
 }
 
@@ -153,6 +153,32 @@
 		transform: translate(20px,0) scale(.75);
 		transform-origin: 100% 100%;
 	}
+}
+
+.hidden-overflow {
+	overflow: hidden !important;
+}
+
+.icon-animation:hover #st6 {
+	transform: rotate(65deg);
+	transform-origin: 70% 40%;
+}
+
+.icon-animation:hover #st8 {
+	fill: #8F44AD;
+    transform: rotate(-26DEG);
+}
+
+.icon-animation:hover #st7 {
+	transform: rotate(360deg);
+	transform-origin: 100% 100%; 
+	opacity: 0;
+}
+
+.icon-animation:hover #st9 {
+	transform: rotate(-360deg);
+	transform-origin: 100% 100%; 
+	opacity: 0;
 }
 
 
