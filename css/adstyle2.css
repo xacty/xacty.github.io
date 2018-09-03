@@ -181,6 +181,33 @@
 	opacity: 0;
 }
 
+.st12 {
+	transform-origin: 50% 50%;
+    transform: translate(0px, -6px) rotate(10deg);
+    transition: 3s;
+}
+
+.st13 {
+	transform: translate(-20px,36px) rotate(19deg);
+    transform-origin: 50% 50%;
+    transition: 3s;
+}
+
+.icon-animation:hover #st12 {
+	transform-origin: 50% 50%;
+    transform: translate(0px, -6px) rotate(370deg);
+}
+
+.icon-animation:hover #st13 {
+	transform-origin: 50% 50%;
+    transform: translate(-20px,36px) rotate(-342deg);
+}
+
+.icon-animation svg {
+	position: relative !important;
+	height: 156px;
+}
+
 
 /*buttons styles*/
 
