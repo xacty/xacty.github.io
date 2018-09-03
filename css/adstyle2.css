@@ -50,13 +50,36 @@
 
 #XMLID_1_ {
     transform-origin: 100% 100%;
-    transform: translate(0px, 3px);
-    transition: 1s 0s;
+    animation:pencilbackwards 1s 0s linear backwards;
 }
 
 .icon-animation:hover #XMLID_1_ {
-    transform: translate(90px, 3px) scale(.7);
-    transition: 1s 1s;
+	animation: pencil 1s 1s linear forwards;
+}
+
+@keyframes pencilbackwards {
+	0% {
+		transform: rotate(-85deg) translate(146px, 3px);
+	}
+	50% {
+		transform: rotate(-42.5deg) translate(46px, -48px) scale(.7);
+	}
+	100%{
+		transform: translate(0px, 3px)
+	}
+}
+
+@keyframes pencil {
+	0%{
+		transform: translate(0px, 3px)
+	}
+
+	50% {
+		transform: rotate(-42.5deg) translate(46px, -48px) scale(.7);
+	}
+	100% {
+		transform: rotate(-85deg) translate(146px, 3px);
+	}
 }
 
 #circle-svg {
@@ -80,23 +103,19 @@
 .circle1, .circle2, .circle3 {
 	transform: translate(0px, -162px);
 	transition: 1s 0s;
-    z-index: -1;
 }
 
 .icon-animation:hover .circle1 {
 	transform: translate(0px, -71px);
 	transition: 1s 1s;
-    z-index: -1;
 }
 .icon-animation:hover .circle2 {
 	transform: translate(0px, -71px);
 	transition: 1s 1.20s;
-    z-index: -1;
 }
 .icon-animation:hover .circle3 {
 	transform: translate(0px, -71px);
 	transition: 1s 1.45s;
-    z-index: -1;
 }
 
 #ruler {
@@ -142,7 +161,7 @@
 	transition: 1.5s;
 }
 .icon-animation:hover .st3 {
-	fill:#46B39E;
+	fill:#6b7ba5;
 }
 
 .icon-animation:hover #tint {
