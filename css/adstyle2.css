@@ -34,7 +34,7 @@
 	overflow: visible !important;
 }
 
-#ruler, #pencil, .h3-needs, #st6, #st7, #st8, #st9  {
+#ruler, #pencil, .h3-needs, #st6, #st7, #st8, #st9, .st3  {
 	transition: 1s;
 }
 
@@ -79,6 +79,10 @@
 	-webkit-animation: feather 1.5s linear forwards;
 	-o-animation: feather 1.5s linear forwards;
 	animation: feather 1.5s linear forwards;
+}
+
+.icon-animation:hover .st3 {
+	fill:#46B39E;
 }
 
 .icon-animation:hover #tint {
