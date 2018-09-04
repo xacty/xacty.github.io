@@ -145,6 +145,9 @@
 }
 
 .circle1, .circle2, .circle3 {
+	-webkit-transform: translate(0px, -162px);
+	-ms-transform: translate(0px, -162px);
+	-o-transform: translate(0px, -162px);
 	transform: translate(0px, -162px);
 }
 
@@ -167,15 +170,30 @@
 }
 
 .icon-animation:hover .circle1 {
+	-webkit-transform: translate(0px, -64px);
+	-ms-transform: translate(0px, -64px);
+	-o-transform: translate(0px, -64px);
 	transform: translate(0px, -64px);
+	-webkit-transition: 1s 1s;
+	-o-transition: 1s 1s;
 	transition: 1s 1s;
 }
 .icon-animation:hover .circle2 {
+	-webkit-transform: translate(0px, -60px);
+	-ms-transform: translate(0px, -60px);
+	-o-transform: translate(0px, -60px);
 	transform: translate(0px, -60px);
+	-webkit-transition: 1s 1.20s;
+	-o-transition: 1s 1.20s;
 	transition: 1s 1.20s;
 }
 .icon-animation:hover .circle3 {
+	-webkit-transform: translate(0px, -63px);
+	-ms-transform: translate(0px, -63px);
+	-o-transform: translate(0px, -63px);
 	transform: translate(0px, -63px);
+	-webkit-transition: 1s 1.45s;
+	-o-transition: 1s 1.45s;
 	transition: 1s 1.45s;
 }
 
@@ -2094,9 +2112,6 @@
 	.icon-animation:hover #st7 { 
 	opacity: 1;
 	}
-
-
-
 
 	.desc5:hover div>.imgP {
 		opacity: 0;
