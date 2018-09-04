@@ -838,7 +838,7 @@
 	opacity: 1;
 }
 
-.desc5:hover div>.logoP {
+.desc5:hover div>a>.logoP {
 	opacity: 0;
 	margin-top: -100px;
 }
@@ -2095,31 +2095,19 @@
 	opacity: 1;
 	}
 
-	.desc5:hover div>.overlayInside {
-		margin-top: 0;
-		opacity: 1;
-	}
 
-	.desc5:hover .overlay5{
-		opacity: 0;
-		filter: saturate(300%);
-	}
+
 
 	.desc5:hover div>.imgP {
 		opacity: 0;
 	}
 
-	.desc5:hover div>.logoP {
+	.desc5:hover div>a>.logoP {
 		opacity: 1;
 		margin-top: 0;
 	}
 
-	#portfolio-btn2 {
-	border-color: #26306b;
-	color: #26306b;
-	}
-
 	.overlay5 {	
-	opacity: 1;
+	visibility: hidden;
 	}
 }
