@@ -148,18 +148,21 @@
 	-webkit-transform: translate(0px, -162px);
 	-ms-transform: translate(0px, -162px);
 	-o-transform: translate(0px, -162px);
+	-moz-transform: translate(0px, -162px);
 	transform: translate(0px, -162px);
 }
 
 .circle1 {
 	-webkit-transition: 1s .5s;
 	-o-transition: 1s .5s;
+	-moz-transition: 1s .5s;
 	transition: 1s .5s;
 }
 
 .circle2 {
 	-webkit-transition: 1s .25s;
 	-o-transition: 1s .25s;
+	-moz-transition: 1s .25s;
 	transition: 1s .25s;
 }
 
@@ -376,7 +379,57 @@
 	height: 156px;
 }
 
+/*the team section*/
 
+.row-team .col-md-4 {
+	padding: 0;
+	border:1px solid #E2E9ED;
+}
+
+.team-wrapper {
+	overflow: hidden !important;
+	position: relative;
+	transition: 2s;
+	background: white;
+}
+
+.team-wrapper svg {
+	transition: 1s;
+	position: absolute !important;
+	transform-origin: 100% 100%;
+	top: 0px;
+	left:0px;
+	transform: scale(1.01);
+}
+
+.team-wrapper:hover svg {
+	top: -700%;
+    left: -1010%;
+    width: 2000%;
+    height: 2000%;
+    transition: 2s;
+}
+
+.team-text {
+	position: absolute;
+	top: 75%;
+	left: 18%;
+}
+
+.team-wrapper:hover .team-text {
+	opacity: 0;
+	transition: 1s;
+}
+
+.team-name {
+	font-size: 18pt;
+	font-weight: 400;
+}
+
+.team-position {
+	font-size: 10pt;
+	font-weight: 300;
+}
 
 /*videodiv*/ 
 
@@ -1872,6 +1925,10 @@
 }
 
 @media screen and  (max-width: 768px){
+
+	.photo3:hover {
+	transform: translateY(-65.5%) rotateX(56deg) rotateY(0deg) rotate(45deg);
+	}
 
 	.tittletext {
 		font-size: 41px;
