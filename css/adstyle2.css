@@ -402,6 +402,14 @@
 	transform: scale(1.01);
 }
 
+.team-wrapper:hover #letter-nj {
+	top: -1000%;
+    left: -1070%;
+    width: 2000%;
+    height: 2000%;
+    transition: 2s;
+}
+
 .team-wrapper:hover #letter-a {
 	top: -700%;
     left: -1010%;
@@ -418,9 +426,9 @@
     transition: 2s;
 }
 
-.team-wrapper:hover #letter-nj {
-	top: -1000%;
-    left: -1070%;
+.team-wrapper:hover #letter-r {
+	top: -700%;
+    left: -1110%;
     width: 2000%;
     height: 2000%;
     transition: 2s;
