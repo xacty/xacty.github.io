@@ -418,6 +418,14 @@
     transition: 2s;
 }
 
+.team-wrapper:hover #letter-nj {
+	top: -1000%;
+    left: -1070%;
+    width: 2000%;
+    height: 2000%;
+    transition: 2s;
+}
+
 .team-text {
 	position: absolute;
 	top: 75%;
