@@ -402,9 +402,17 @@
 	transform: scale(1.01);
 }
 
-.team-wrapper:hover svg {
+.team-wrapper:hover #letter-a {
 	top: -700%;
     left: -1010%;
+    width: 2000%;
+    height: 2000%;
+    transition: 2s;
+}
+
+.team-wrapper:hover #letter-g {
+	top: -700%;
+    left: -631%;
     width: 2000%;
     height: 2000%;
     transition: 2s;
