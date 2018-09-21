@@ -461,6 +461,10 @@
 	font-weight: 300;
 }
 
+#btn-team-top {
+	margin-top: 15px; 
+}
+
 /*videodiv*/ 
 
 .leftside {
