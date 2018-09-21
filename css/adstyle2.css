@@ -381,10 +381,21 @@
 
 /*the team section*/
 
-.row-team .col-md-4 {
+.row-team .team-wrapper {
 	padding: 0;
 	border:1px solid #E2E9ED;
 }
+
+.team-image {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	transform: scale(1.01);
+	transition: transform 1s linear;
+    transform-origin: 52% 35%;	
+}
+
+
 
 .team-wrapper {
 	overflow: hidden !important;
@@ -394,51 +405,46 @@
 }
 
 .team-wrapper svg {
-	transition: 1s;
-	position: absolute !important;
-	transform-origin: 100% 100%;
-	top: 0px;
-	left:0px;
+	-webkit-transition: transform 1s;
+	-o-transition: transform 1s;
+	transition: transform 1s;
+	position: absolute;
 	transform: scale(1.01);
 }
 
-.team-wrapper:hover #letter-nj {
-	top: -1000%;
-    left: -1070%;
-    width: 2000%;
-    height: 2000%;
-    transition: 2s;
+.team-wrapper:hover {
+	z-index: 2;
+	box-shadow: 2px 2px 8px lightgrey;
 }
 
-.team-wrapper:hover #letter-a {
-	top: -700%;
-    left: -1010%;
-    width: 2000%;
-    height: 2000%;
-    transition: 2s;
+.team-wrapper:hover .letter-team {
+	-webkit-transform: scale(22);
+	-ms-transform: scale(22);
+	-o-transform: scale(22);
+	transform: scale(22);
 }
 
-.team-wrapper:hover #letter-g {
-	top: -700%;
-    left: -631%;
-    width: 2000%;
-    height: 2000%;
-    transition: 2s;
+.team-wrapper:hover #letter-a, #letter-a {	
+    transform-origin: 52% 35%;
 }
 
-.team-wrapper:hover #letter-r {
-	top: -700%;
-    left: -1110%;
-    width: 2000%;
-    height: 2000%;
-    transition: 2s;
+.team-wrapper:hover #letter-j, #letter-j {
+	transform-origin: 56% 35%;
+}
+
+.team-wrapper:hover #letter-n, #letter-n {
+	transform-origin: 37% 30%;
+}
+
+.team-wrapper:hover #letter-o, #letter-o {
+    transform-origin: 34% 44%;
 }
 
 .team-text {
-	position: absolute;
-	top: 75%;
-	left: 18%;
-	transition: 1s;	
+    position: relative;
+    transform: translate(0,-50%);
+    margin-top: -13%;
+    transition: 1s;
 }
 
 .team-wrapper:hover .team-text {
