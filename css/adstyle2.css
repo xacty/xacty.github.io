@@ -390,30 +390,43 @@
 	position: absolute;
 	width: 100%;
 	height: auto;
+	-webkit-transform: scale(1.01);
+	-ms-transform: scale(1.01);
+	-o-transform: scale(1.01);
 	transform: scale(1.01);
+	-webkit-transition: transform 1s linear;
+	-o-transition: transform 1s linear;
 	transition: transform 1s linear;
-    transform-origin: 52% 35%;	
+	-webkit-transform-origin: 52% 35%;
+	-moz-transform-origin: 52% 35%;
+	-ms-transform-origin: 52% 35%;
+	-o-transform-origin: 52% 35%;
+	transform-origin: 52% 35%;
 }
-
-
 
 .team-wrapper {
 	overflow: hidden !important;
 	position: relative;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
 	transition: 2s;
 	background: white;
 }
 
 .team-wrapper svg {
+	-webkit-transform: scale(1.01);
+	-ms-transform: scale(1.01);
+	-o-transform: scale(1.01);
+	transform: scale(1.01);
 	-webkit-transition: transform 1s;
 	-o-transition: transform 1s;
 	transition: transform 1s;
 	position: absolute;
-	transform: scale(1.01);
 }
 
 .team-wrapper:hover {
 	z-index: 2;
+	-webkit-box-shadow: 2px 2px 8px lightgrey;
 	box-shadow: 2px 2px 8px lightgrey;
 }
 
@@ -424,26 +437,47 @@
 	transform: scale(22);
 }
 
-.team-wrapper:hover #letter-a, #letter-a {	
+.team-wrapper:hover #letter-a, #letter-a {
+    -webkit-transform-origin: 52% 35%;
+    -moz-transform-origin: 52% 35%;
+    -ms-transform-origin: 52% 35%;
+    -o-transform-origin: 52% 35%;
     transform-origin: 52% 35%;
 }
 
 .team-wrapper:hover #letter-j, #letter-j {
+	-webkit-transform-origin: 56% 35%;
+	-moz-transform-origin: 56% 35%;
+	-ms-transform-origin: 56% 35%;
+	-o-transform-origin: 56% 35%;
 	transform-origin: 56% 35%;
 }
 
 .team-wrapper:hover #letter-n, #letter-n {
+	-webkit-transform-origin: 36% 30%;
+	-moz-transform-origin: 36% 30%;
+	-ms-transform-origin: 36% 30%;
+	-o-transform-origin: 36% 30%;
 	transform-origin: 36% 30%;
 }
 
 .team-wrapper:hover #letter-o, #letter-o {
+    -webkit-transform-origin: 33% 44%;
+    -moz-transform-origin: 33% 44%;
+    -ms-transform-origin: 33% 44%;
+    -o-transform-origin: 33% 44%;
     transform-origin: 33% 44%;
 }
 
 .team-text {
     position: relative;
-    transform: translate(0,-50%);
     margin-top: -13%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
